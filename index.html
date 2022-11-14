@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le site numéro 1 des comics en version animée et en lecture">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Comet</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1 id="logo">
+            Comet
+          </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+</header>
+
+<body>
+  <div class="container-fluid" id="homeLargeScreen">
+    <div class="row">
+      <div id="series" class="mainDiv col-3">
+        <section class="mainDivTitle">
+          <h3>
+            Séries
+          </h3>
+        </section>
+      </div>
+      <div id="animations" class="mainDiv col-3">
+        <section class="mainDivTitle">
+          <h3>
+            Films d'animation
+          </h3>
+        </section>
+      </div>
+      <div id="bd" class="mainDiv col-3">
+        <section class="mainDivTitle">
+          <h3>
+            BD
+          </h3>
+        </section>
+      </div>
+      <div id="news" class="mainDiv col-3">
+        <section class="mainDivTitle">
+          <h3>
+            Nouveautés
+          </h3>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="homeSmallScreen" class="container-fluid carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homeSmallScreen" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#homeSmallScreen" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#homeSmallScreen" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#homeSmallScreen" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active mainDivMobile" id="carousel-series">
+        <section class="mainDivTitle">
+          <h3>
+            Séries
+          </h3>
+        </section>
+      </div>
+      <div class="carousel-item mainDivMobile" id="carousel-animations">
+        <section class="mainDivTitle">
+          <h3>
+            Films d'animations
+          </h3>
+        </section>
+      </div>
+      <div class="carousel-item mainDivMobile" id="carousel-bd">
+        <section class="mainDivTitle">
+          <h3>
+            BD
+          </h3>
+        </section>
+      </div>
+      <div class="carousel-item mainDivMobile" id="carousel-news">
+        <section class="mainDivTitle">
+          <h3>
+            Nouveautés
+          </h3>
+        </section>
+      </div>
+      <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#homeSmallScreen" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#homeSmallScreen" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid">
+    <div>
+      <h1>Tous tes comics, BD et films d'animations</h1>
+    </div>
+
+    <div class="row main-content" id="yakari">
+      <section class="col-lg-6 yakari-img">
+        <img src="assets/img/yakari.jpg" alt="Yakari - bande dessinée et dessin animé" width="60%">
+      </section>
+      <section class="col-lg-6">
+        <h4>
+          Plus de 200 bandes dessinées jeunesse
+        </h4>
+        <p>
+          Yakari, Tintin, Monster Allergy...
+          Découvre plus de 200 bandes dessinées jeunesse<br>
+          <button class="btn btn-starter">
+            Découvrir
+          </button>
+        </p>
+      </section>
+    </div>
+
+    <div class="row" id="cyberpunk">
+     <section class="content-box">
+      <h4>Black Friday</h4>
+      <p>
+        Profites de cette occasion pour gagner des places au <strong>parc Astérix</strong>, des <strong>jeux</strong>, et plein d'autres <strong>cadeaux</strong> !
+        <br>
+        <button class="btn btn-starter">
+          Participer
+        </button>
+      </p>
+     </section>
+    </div>
+  </div>
+
+
+  <div id="callToAction" class="container-fluid col-md-12">
+    <div class="row">
+      <div class="col-md-10">
+        <h2>Newsletter</h2>
+        <p>
+          Tu veux être informé sur les nouveautés ? Inscris-toi à la newsletter pour ne pas rater les nouvelles <strong>séries</strong> !
+        </p>
+      </div>
+      <div class="col-md-2">
+        <a href="#">
+          <button class="btn btn-info">
+            S'inscrire
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <section>
+        Comèt - 2022 Copyright
+        <nav>
+          <ul>
+            <li>Contact</li>
+            <li>CGU</li>
+            <li>CGV</li>
+            <li>Newsletter</li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </div>
+
+
+</footer>
+
+
+</html>

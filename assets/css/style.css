@@ -1,0 +1,212 @@
+/* PLOCIES D'ÉCRITURE */
+
+@font-face {
+    font-family: 'wigglye';
+    src: url("../fonts/Wigglye.ttf");
+}
+
+
+/* ANIMATIONS */
+
+@keyframes slip {
+    from {
+      margin-top: -10vh;
+      opacity: 0.3;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+  @keyframes slip-reverse {
+    from {
+      margin-top: 10vh;
+      opacity: 0.1;
+    }
+  
+    to {
+      margin-top: 0;
+    }
+  }
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1300px) {
+    #homeLargeScreen{
+        display: none;
+    }
+    #homeSmallScreen{
+        display: block;
+        height: 80vh;
+    }
+    .mainDivTitle{
+        color: white;
+    }
+    #cyberpunk{
+        background-image: url("../img/cyberpunk_small.jpg");
+    }
+}
+
+@media (min-width: 1300px){
+    #homeLargeScreen{
+        display: block;
+    }
+    #homeSmallScreen, .carousel-indicators, .carousel-btn{
+        display: none;
+    }
+    #cyberpunk{
+        background-image: url("../img/cyberpunk.jpg");
+    }
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+/* MULTIPAGES */
+
+p{
+    font-size: 1.3em;
+}
+.btn{
+    font-size: 1.2em;
+    justify-items: center;
+}
+.btn-starter{
+    background-color: brown;
+    color: white;
+}
+.btn-starter:hover{
+    background-color: darkred;
+    color: white;
+}
+
+#logo{
+    font-family: "wigglye";
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5{
+    text-align: center;
+    text-transform: uppercase;
+}
+strong{
+    font-weight: normal;
+}
+
+
+
+/* MAIN PAGE */
+
+#callToAction{
+    color: white;
+    background-color: brown;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation-name: hide;
+    animation-duration: 2s;
+    text-align: center;
+    height: auto;
+}
+#series{
+    background-image: url("../img/series.jpg");
+    animation-name: slip;
+}
+#animations{
+    background-image: url("../img/animations.jpg");
+    animation-name: slip-reverse; 
+}
+#bd{
+    background-image: url("../img/bd_laptop.jpg");
+    animation-name: slip;
+}
+#news{
+    background-image: url("../img/news.jpg");
+    animation-name: slip-reverse; 
+}
+
+#carousel-series{
+    background-image: url("../img/series.jpg");
+}
+#carousel-animations{
+    background-image: url("../img/animations.jpg");
+}
+#carousel-bd{
+    background-image: url("../img/bd_laptop.jpg");
+}
+#carousel-news{
+    background-image: url("../img/news.jpg");
+}
+.mainDiv{
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+}
+.mainDiv:hover{
+    filter: grayscale(1);
+    color: white;
+}
+.mainDivTitle{
+    background-color: brown;
+    margin-top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mainDivMobile{
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#yakari p{
+    text-align: center;
+}
+#cyberpunk{
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.yakari-img{
+    text-align: center;
+}
+
+.main-content{
+    margin-bottom: 20px;
+}
+
+.content-box{
+    background: black;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+
+footer{
+    text-align: center;
+    border: 1px solid gray;
+    background-color: black;
+    color: gray;
+}
+
+footer ul{
+    list-style: none;
+}
